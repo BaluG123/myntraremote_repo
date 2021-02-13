@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends 'testApp/base.html' %}
+{% block body_block %}
+<h5><mark>LOGIN..!</mark></h5>
+<form  method="post">
+  {{form.as_p}}
+  {% csrf_token %}
+  <input type="submit" name="" value="Log In" class="btn btn-success">
+  <p>new user.. log in </p>
+  <a href="/signup" class="btn btn-success">SignUp</a>
+
+</form>
+{% endblock %}

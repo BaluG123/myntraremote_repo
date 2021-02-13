@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>info</title>
+    <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+    <link rel="stylesheet" href="{% static "css/demo.css" %}">
+    <style media="screen">
+      .jumbotron{
+        background:url({% static "images/back5.jpg" %})
+      }
+      body{
+        color:white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" align=center>
+      <div class="jumbotron">
+        <h4><i>please provide your information.!</i></h4>
+        <form method="post">
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" name="" value="submit"><br>
+        </form><br>
+
+        <a href="/adrress" class="btn btn-success"> Add Your Address  </a>
+      </div>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+    <link rel="stylesheet" href="{% static "css/demo.css" %}">
+    <script type="text/javascript" src={% static "js/jqery.js" %}>
+
+    </script>
+    <style media="screen">
+    .jumbotron{
+      background: url({% static "images/back.jpg" %});
+      background-size: cover;
+      margin-top: 50px;
+    }
+    img{
+      height: 300px;
+      width: 350px;
+      padding: 3px;
+      margin-left: 3px;
+      margin-bottom: 3px;
+    }
+    .box{
+      height: 400px;
+      width: 360px;
+      border: 1px solid #3b5998;
+
+    }
+    body{
+      background: url({% static "images/back3.jpg"%})
+    }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <a class="navbar-brand" href="/home"><h5 align=center id="god"> <i>BALU<small></small></i><svg width="0.8em" height="0.8em" viewBox="0 0 16 16" class="bi bi-peace-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M14 13.292A8 8 0 0 0 8.5.015v7.778l5.5 5.5zm-.708.708L8.5 9.206v6.778a7.967 7.967 0 0 0 4.792-1.986zM7.5 15.985V9.207L2.708 14A7.967 7.967 0 0 0 7.5 15.985zM2 13.292A8 8 0 0 1 7.5.015v7.778l-5.5 5.5z"/>
+</svg></h5></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/home">Home </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/about">Aboutus</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/rateus">Rateus</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/store"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+</svg></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/notificatio"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-bell-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+</svg></a>
+      </li>
+    </ul>
+    <span class="navbar-text" >
+      <a href="/signup" class="btn btn-outline-primary">Sign In</a>&nbsp&nbsp
+    </span>
+    <span class="navbar-text">
+      <a href="/accounts/login" class="btn btn-outline-success">Log In</a>&nbsp&nbsp
+    </span>
+    <span class="navbar-text">
+      <a href="/accounts/logout" class="btn btn-outline-danger">Log Out</a>
+    </span>
+  </div>
+</nav>
+  <div class="container" align=center>
+    <div class="jumbotron">
+    <h2 align=center style="color:orange;font-size:50px;padding-top:50px;"> <i>SDG<small>oudi</small></i></h2><br>
+   </div>
+</div>
+
+  <div class="row">
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirts.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> <a href="/images"> <svg width="2em" height="em" viewBox="0 0 16 16" class="bi bi-images" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M12.002 4h-10a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1zm-10-1a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2h-10zm4 4.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+  <path fill-rule="evenodd" d="M4 2h10a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1v1a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2h1a1 1 0 0 1 1-1z"/></a>
+</svg></p> </div>  </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirts.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirts.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirts.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt1.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div>  </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt1.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt1.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt1.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt2.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div>  </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt2.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt2.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt2.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt3.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div>  </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt3.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt3.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt3.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirts.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div>  </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirts.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirts.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirts.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt1.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div>  </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt1.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt1.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt1.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt2.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div>  </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt2.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt2.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt2.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt3.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div>  </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt3.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt3.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+    <div class="col-lg-3 col-md-6 col-xs-12"> <div class="box"> <img src="{% static "images/shirt3.jpg" %}" alt=""> <p align=center>price:5$</p> <p align=center> <a href="#" class="btn btn-success">buy</a> </p> </div> </div>
+
+  </div><br>
+  <a href="/home" class="btn btn-secondary" style="margin-left:0px">PREVIOUS</a>
+  <a href="/page2" class="btn btn-secondary" style="margin-left:1300px" >NEXT</a>
+
+
+
+    <script type="text/javascript" src={% static "js/demo.js"%}>
+
+    </script>
+  </body>
+</html>
